@@ -24,7 +24,7 @@ import VueScrollReveal from "scrollreveal";
             duration: 1000,
             distance: "25rem",
             delay: 300,
-            reset: true,
+            // reset: true,
 
           });
           VueScrollReveal().reveal(".main-right", {
@@ -32,7 +32,7 @@ import VueScrollReveal from "scrollreveal";
             duration: 1000,
             distance: "25rem",
             delay: 300,
-            reset: true,
+            // reset: true,
           });
       }
     }

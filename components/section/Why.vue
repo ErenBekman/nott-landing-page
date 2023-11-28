@@ -53,7 +53,7 @@ import VueScrollReveal from "scrollreveal";
             duration: 1000,
             distance: '25rem',
             delay: 300,
-            reset: true,
+            // reset: true,
         });
 
         VueScrollReveal().reveal('.img-2', {
@@ -61,7 +61,7 @@ import VueScrollReveal from "scrollreveal";
             duration: 1000,
             distance: '25rem',
             delay: 300,
-            reset: true,
+            // reset: true,
         });
 
         VueScrollReveal().reveal('.img-3', {
@@ -69,7 +69,7 @@ import VueScrollReveal from "scrollreveal";
             duration: 1000,
             distance: '25rem',
             delay: 300,
-            reset: true,
+            // reset: true,
         });
      },
     }

@@ -129,23 +129,23 @@ html {
   transition: box-shadow 0.3s ease;
 }
 
-@keyframes shine {
-  0% {
-    box-shadow: 0 0 20px 15px rgba(193, 255, 2, 0.8);
-  }
-  50% {
-    box-shadow: 0 0 30px 20px rgba(193, 255, 2, 0.8);
-  }
-  100% {
-    box-shadow: 0 0 20px 15px rgba(193, 255, 2, 0.8);
-  }
-}
+// @keyframes shine {
+//   0% {
+//     box-shadow: 0 0 20px 15px rgba(193, 255, 2, 0.8);
+//   }
+//   50% {
+//     box-shadow: 0 0 30px 20px rgba(193, 255, 2, 0.8);
+//   }
+//   100% {
+//     box-shadow: 0 0 20px 15px rgba(193, 255, 2, 0.8);
+//   }
+// }
 
-.content-img:hover{
-  box-shadow: 0 0 20px 15px rgba(193, 255, 2, 0.8);
-  border-radius: 25%;
-  animation: shine 1s forwards;
-}
+// .content-img:hover{
+//   box-shadow: 0 0 20px 15px rgba(193, 255, 2, 0.8);
+//   border-radius: 25%;
+//   animation: shine 1s forwards;
+// }
 
 
 .join-section{
