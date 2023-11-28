@@ -80,4 +80,31 @@ import VueScrollReveal from "scrollreveal";
     color: #fff;
 }
 
+@media only screen and (max-width: 600px) {
+    .why-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        .card-border{
+            border: none !important;
+            margin: 1rem 0 !important;
+        }
+
+        .img-1, .img-2, .img-3{
+            width: 100px;
+            height: 100px;
+        }
+
+        h1{
+            font-size: 1.5rem;
+        }
+
+        h2{
+            font-size: 1rem;
+        }
+    }
+}
+
 </style>

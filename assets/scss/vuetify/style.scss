@@ -15,6 +15,10 @@ a::before {
   text-decoration: none;
 }
 
+.v-application a {
+  color: #fff !important;
+}
+
 :root {
   --d-bg-color: #242c31;
   --l-bg-color: #f7f7f7;

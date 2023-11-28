@@ -1,9 +1,38 @@
 <template>
     <v-app-bar absolute class="nav-bar" color="#121212" elevate-on-scroll scroll-target="#scrolling-techniques-7">
-        <div class="ml-12">
-            <v-img :src="require('~/assets/images/logo/icon_dark.svg')" contain width="50" height="50" /> 
+
+        <v-menu bottom offset-y>
+            <template v-slot:activator="{ on, attrs }">
+              <v-btn
+                icon
+                v-bind="attrs"
+                v-on="on"
+                class="nav-bar-nav-icon"
+              >
+                <v-icon>mdi-menu</v-icon>
+              </v-btn>
+            </template>
+
+            <v-list>
+              <v-list-item>
+                <a href="https://nott.academy/" target="_blank">
+                    <v-list-item-title>Log In</v-list-item-title>
+                </a>
+              </v-list-item>
+              <v-list-item>
+                <a href="https://nott.academy/" target="_blank">
+                    <v-list-item-title>Join The Club</v-list-item-title>
+                </a>
+              </v-list-item>
+            </v-list>
+          </v-menu>
+        
+        <div>
+            <v-img :src="require('~/assets/images/logo/icon_dark.svg')" contain width="50" height="50" class="img" /> 
         </div>
+
         <v-spacer />
+
         <a href="https://nott.academy/" target="_blank">
             <v-btn text tile class="rounded-lg">
                 <span class="nav-title login">Log in</span>
@@ -60,8 +89,14 @@
     color: white;
     padding: 1rem 4rem;
 
+    .img {
+        margin-left: 3rem;
+    }
 }
 
+.nav-bar-nav-icon {
+    display: none;
+}
 .nav-title {
     text-transform: uppercase;
     font-weight: 500;
@@ -103,4 +138,27 @@
     }
 }
 
+
+@media only screen and (max-width: 600px) {
+    .nav-bar-nav-icon {
+        display: block;
+    }
+
+    .nav-bar {
+        padding: 1rem 2rem;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .nav-title {
+        display: none !important;
+    }
+    
+
+    .btn-join {
+        display: none;
+    }
+}
 </style>

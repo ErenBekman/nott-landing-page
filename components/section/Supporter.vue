@@ -3,12 +3,12 @@
      <div class="d-flex align-center justify-left">
       <h1 class="text-uppercase">Supporters of</h1>
       <div class="ml-3 mb-3">
-        <v-img :src="require('~/assets/images/logo/nott-dark.svg')" height="100" width="100" contain />
+        <v-img :src="require('~/assets/images/logo/nott-dark.svg')" class="supporter-section-img" contain />
       </div>
      </div>
      <div class="d-flex align-center justify-center">
-        <v-img :src="require('~/assets/images/supporters/eccording.svg')" contain width="200" height="200" />
-        <v-img :src="require('~/assets/images/supporters/itu.svg')" contain width="200" height="200" />
+        <v-img :src="require('~/assets/images/supporters/eccording.svg')" contain class="supporter-images" />
+        <v-img :src="require('~/assets/images/supporters/itu.svg')" contain class="supporter-images" />
      </div>
     </div>
 </template>
@@ -19,5 +19,36 @@
 </script>
 
 <style lang="scss" scoped>
+
+.supporter-section-img{
+    width: 100px;
+    height: 100px;
+}
+
+.supporter-images {
+    width: 200px;
+    height: 200px;
+    margin: 0 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .supporter-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1{
+            font-size: 1.5rem;
+        }
+
+        .supporter-images{
+            width: 100px;
+            height: 100px;
+            margin: 0 1rem;
+        }
+        
+    }
+}
 
 </style>

@@ -68,4 +68,53 @@ import VueScrollReveal from "scrollreveal";
 
 
 <style lang="scss" scoped>
+
+@media only screen and (max-width: 600px) {
+  .contact-section{
+    .row{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .join-section{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .anm-left{
+      display: none;
+    }
+
+    .join-img{
+      display: none;
+    }
+
+    .join-title{
+      font-size: 3rem;
+      line-height: 3rem;
+      text-align: center;
+    }
+
+    .join-subtitle{
+      font-size: 1.5rem;
+    }
+
+    .btn-join{
+      width: 100%;
+      padding: 2rem 1rem !important; 
+      font-size: 1rem !important;
+    }
+
+    .content-img{
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+
 </style>
