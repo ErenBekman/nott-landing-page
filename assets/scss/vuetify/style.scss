@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 * {
   font-family: "Roboto", "Helvetica Neue", sans-serif;
@@ -76,6 +78,7 @@ html {
 
 // button
 .btn-join{
+  font-family: 'Inter', sans-serif !important;
   background-color: #c1ff02 !important;
   color: #000 !important;
   border-radius: 15px !important;
@@ -123,6 +126,7 @@ html {
 
 .circle-content-img{
   background-color: #c1ff02;
+  // background: linear-gradient(to bottom, #8dbb00, #c1ff02);
   border-radius: 50%;
   position: absolute;
   top: 75px;
@@ -131,25 +135,24 @@ html {
   height: 250px;
   box-shadow: 0 0 20px 15px rgba(193, 255, 2, 0.8); 
   transition: box-shadow 0.3s ease;
+  animation: shine 4s ease-out infinite;
 }
 
-// @keyframes shine {
-//   0% {
-//     box-shadow: 0 0 20px 15px rgba(193, 255, 2, 0.8);
-//   }
-//   50% {
-//     box-shadow: 0 0 30px 20px rgba(193, 255, 2, 0.8);
-//   }
-//   100% {
-//     box-shadow: 0 0 20px 15px rgba(193, 255, 2, 0.8);
-//   }
-// }
+@keyframes shine {
 
-// .content-img:hover{
-//   box-shadow: 0 0 20px 15px rgba(193, 255, 2, 0.8);
-//   border-radius: 25%;
-//   animation: shine 1s forwards;
-// }
+  0% {
+    box-shadow: 0 0 20px 15px rgba(193, 255, 2, 0.8); 
+  }
+
+  50% {
+    box-shadow: 0 0 20px 15px rgba(193, 255, 2, 0.8); 
+  }
+
+  100% {
+    box-shadow: 0 0 20px 15px rgba(193, 255, 2, 0.8); 
+  }
+  
+}
 
 
 .join-section{
