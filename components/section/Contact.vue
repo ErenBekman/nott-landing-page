@@ -2,7 +2,7 @@
     <div class="contact-section">
       <v-row>
           <v-col cols="6" class="anm-left">
-              <!-- <div class="circle-content-img"></div> -->
+              <div class="circle-content-img"></div>
               <v-img :src="require('~/assets/images/people/business-3d-young-women-standing.png')" contain height="400" width="400" class="content-img" />
           </v-col>
           <v-col cols="6" class="join-section anm-right">
