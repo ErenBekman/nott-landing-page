@@ -1,8 +1,8 @@
 <template>
   <v-row class="main-section">
     <v-col cols="7" class="main-left" style="position: relative;">
-      <span class="main-title">Think <span class="color-main">green</span>,</span>
-      <span class="main-title">Study <span class="color-main">smart</span>.</span>
+      <span class="main-title">Think <span class="color-main main-second-title">green</span>,</span> <br>
+      <span class="main-title">Study <span class="color-main main-second-title">smart</span>.</span>
       <p class="main-subtitle">Buy and sell notes with us.</p>
       <div class="mt-10">
         <span> 
@@ -77,9 +77,22 @@ import VueScrollReveal from "scrollreveal";
   }
 }
 
+.main-second-title {
+  font-family: 'BebasNeue-Regular', sans-serif;
+  font-size: 6rem;
+  letter-spacing: -0.0083333333em !important;
+  line-height: 6rem;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 3rem;
+    line-height: 3rem;
+    text-align: center;
+  }
+}
+
 .main-subtitle{
   font-family: 'BebasNeue-Book', sans-serif;
-  font-size: 3.75rem !important;
+  font-size: 3rem;
   font-weight: 300;
   line-height: 3.75rem;
   letter-spacing: -0.0083333333em !important;
