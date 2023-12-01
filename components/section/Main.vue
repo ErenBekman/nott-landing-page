@@ -10,9 +10,11 @@
           <span class="main-alttitle">from here</span>
           <v-img :src="require('~/assets/images/arrow/arrow.svg')" contain class="arrow-img" />
         </span>
-        <v-btn  class="btn-join mt-5">
-          <span>Join the club</span>
-        </v-btn>
+        <a href="https://nott.academy/" target="_blank">
+          <v-btn class="btn-join mt-5">
+            <span>Join the club</span>
+          </v-btn>
+        </a>
       </div>
     </v-col>
     <v-col cols="5" class="main-right">
@@ -48,22 +50,7 @@ import VueScrollReveal from "scrollreveal";
 </script>
 
 <style lang="scss" scoped>
-@font-face {
-  font-family: 'BebasNeue-Regular';
-  src: url('~/assets/fonts/BebasNeue Bold.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'BebasNeue-Book';
-  src: url('~/assets/fonts/BebasNeueBook.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 .main-title{
-  font-family: 'BebasNeue-Regular', sans-serif;
   font-size: 6rem;
   letter-spacing: -0.0083333333em !important;
   line-height: 6rem;
@@ -71,20 +58,18 @@ import VueScrollReveal from "scrollreveal";
   text-transform: uppercase;
 
   @media only screen and (max-width: 600px) {
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 5rem;
     text-align: center;
   }
 }
 
 .main-second-title {
-  font-family: 'BebasNeue-Regular', sans-serif;
   font-size: 6rem;
   letter-spacing: -0.0083333333em !important;
   line-height: 6rem;
 
   @media only screen and (max-width: 600px) {
-    font-size: 3rem;
+    font-size: 5rem;
     line-height: 3rem;
     text-align: center;
   }
@@ -99,7 +84,7 @@ import VueScrollReveal from "scrollreveal";
   text-transform: uppercase;
   
   @media only screen and (max-width: 600px) {
-    font-size: 2rem !important;
+    font-size: 2.5rem !important;
     line-height: 3rem;
     text-align: center
   }
@@ -118,7 +103,7 @@ import VueScrollReveal from "scrollreveal";
   transform-origin: right bottom; 
 
   @media only screen and (max-width: 600px) {
-    font-size: 1.2rem;
+    font-size: 2rem;
     line-height: 1rem;
     bottom: 80px;
     right: -50px;
@@ -130,13 +115,13 @@ import VueScrollReveal from "scrollreveal";
   height: 3.5rem;
   margin-right: 0.5rem;
   position: absolute;
-  top: 350px;
+  top: 325px;
   right: 350px;
 
   @media only screen and (max-width: 600px) {
     width: 2rem;
     height: 2rem;
-    bottom: 0;
+    top: 600px;
     right: -30px;
   }
 }
@@ -146,7 +131,6 @@ import VueScrollReveal from "scrollreveal";
   width: 450px;
   height: 400px;
 }
-
 
 
 @media only screen and (max-width: 600px) {
@@ -167,8 +151,11 @@ import VueScrollReveal from "scrollreveal";
   }
   .btn-join {
     width: 100%;
-    padding: 2rem 1rem !important; 
-    font-size: 1rem !important;
+    padding: 1.5rem 2rem !important; 
+  }
+  
+  .btn-join span {
+    font-size: 0.9rem !important;
   }
 }
 </style>

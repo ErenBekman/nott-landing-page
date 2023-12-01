@@ -8,9 +8,9 @@
             <v-card-text class="d-flex flex-column justify-center align-center why-title">
                 <h1 class="text-h2 font-weight-bold text-uppercase">What</h1>
                 <h2 class="text-h4 text-uppercase">We do</h2>
-                <h2 class="text-center mt-10 grey-text">
+                <p class="text-center mt-5 grey-text">
                     Nott is a <b> sustainable education platform </b> that facilitates the buying and selling of lecture notes for university students and moves their study processes to digital.
-                </h2>
+                </p>
             </v-card-text>        
         </v-card>
 
@@ -22,9 +22,9 @@
             <v-card-text class="d-flex flex-column justify-center align-center why-title">
                 <h1 class="text-h2 font-weight-bold text-uppercase">Why</h1>
                 <h2 class="text-h4 text-uppercase">We do it</h2>
-                <h2 class="text-center mt-10 grey-text">
+                <p class="text-center mt-5 grey-text">
                     Every year <b > 180,000 trees are sacrificed </b> for notes’ exchanges, that’s why we came up with a more sustainable & digitalized solution.
-                </h2>
+                </p>
             </v-card-text>
         </v-card>
         
@@ -36,9 +36,9 @@
             <v-card-text class="d-flex flex-column justify-center align-center why-title">
                 <h1 class="text-h2 font-weight-bold text-uppercase whiter-text">Who</h1>
                 <h2 class="text-h4 text-uppercase">We do it for</h2>
-                <h2 class="text-center mt-10 grey-text">
+                <p class="text-center mt-5 grey-text">
                     For university & college students who wants to sell & buy notes for a better professional future - <b class="whiter-text"> it is for every grade. </b>
-                </h2>
+                </p>
             </v-card-text>
         </v-card>
     </div>
@@ -81,8 +81,26 @@ import VueScrollReveal from "scrollreveal";
 <style lang="scss" scoped>
 
 .why-title {
-    font-family: 'inter';
     color: #fff !important;
+}
+
+.why-title p{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 200 !important;
+}
+
+.why-title p b {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    // color: yellow;
+}
+
+.why-title h2 {
+    font-family: 'BebasNeue-Book', sans-serif !important;
+    font-size: 3rem !important;
+    margin-top: 10px;
 }
 
 .whiter-text {
@@ -120,5 +138,4 @@ import VueScrollReveal from "scrollreveal";
         }
     }
 }
-
 </style>

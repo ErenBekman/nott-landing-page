@@ -37,14 +37,15 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: 5rem;
 
         h1{
             font-size: 1.5rem;
         }
 
         .supporter-images{
-            width: 100px;
-            height: 100px;
+            width: 125px;
+            height: 125px;
             margin: 0 1rem;
         }
         

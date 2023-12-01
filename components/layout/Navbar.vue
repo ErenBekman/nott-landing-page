@@ -35,7 +35,7 @@
 
         <a href="https://nott.academy/" target="_blank">
             <v-btn text tile class="rounded-lg">
-                <span class="nav-title login">Log in</span>
+                <span class="nav-title login mr-2">Log in</span>
             </v-btn>
         </a>
 
@@ -67,10 +67,10 @@
                             <span>Sign up with Google</span>
                         </v-btn>
                     </a>
-                    <a href="https://nott.academy/" target="_blank">
-                        <v-btn text outlined class="rounded-lg nav-btn-border mt-3" width="225">
+                    <a href="https://nott.academy/" target="_blank" >
+                        <v-btn text outlined class="rounded-lg nav-btn-border mt-3" width="225" style="text-transform: lowercase !important;">
                             <v-icon left size="20">mdi-apple</v-icon>
-                            <span>Sign up with Apple</span>
+                            <span >Sign up with Apple</span>
                         </v-btn>
                     </a>
                 </v-card-text>
@@ -99,12 +99,13 @@
 }
 .nav-title {
     text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     &.login {
         text-decoration: underline;
         text-decoration-color: yellow;
-        text-underline-offset: 5px;
+        text-underline-offset: 7px;
     }
 
     &:hover {
@@ -124,28 +125,31 @@
 
 .nav-btn-border{
     border: 1px solid yellow !important;
-    border-radius: 15px !important;
+    border-radius: 20px !important;
     padding: 0.5rem 1rem;
     margin-left: 1rem;
     background-color: transparent;
+    text-transform: capitalize;
     color: white;
     font-weight: 500;
     font-size: 1rem;
-    text-transform: capitalize;
     &:hover {
         background-color: yellow;
         color: black;
     }
 }
 
-
 @media only screen and (max-width: 600px) {
     .nav-bar-nav-icon {
         display: block;
     }
-
+    
+    
     .nav-bar {
         padding: 1rem 2rem;
+        a {
+            display: none;
+        }
     }
 
     .img {
