@@ -60,6 +60,7 @@ import VueScrollReveal from "scrollreveal";
             distance: '25rem',
             delay: 300,
             // reset: true,
+            mobile: false
         });
       }
     }
