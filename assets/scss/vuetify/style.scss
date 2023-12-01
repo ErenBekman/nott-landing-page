@@ -126,16 +126,12 @@ html {
 
 .circle-content-img{
   background-color: #c1ff02;
-  // background: linear-gradient(to bottom, #8dbb00, #c1ff02);
   border-radius: 50%;
   position: absolute;
-  top: 75px;
-  left: 45px;
-  width: 300px;
-  height: 250px;
-  // box-shadow: 0 0 20px 15px rgba(193, 255, 2, 0.8); 
-  // transition: box-shadow 0.3s ease;
-  // animation: shine 4s ease-out infinite;
+  top: 85px;
+  left: 80px;
+  width: 225px;
+  height: 225px;
 }
 
 @keyframes shine {
