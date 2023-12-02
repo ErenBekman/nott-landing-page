@@ -54,7 +54,7 @@ import VueScrollReveal from "scrollreveal";
   font-size: 6rem;
   letter-spacing: -0.0083333333em !important;
   line-height: 6rem;
-  font-weight: 700;
+  font-weight: 700 !important;
   text-transform: uppercase;
 
   @media only screen and (max-width: 600px) {
@@ -98,7 +98,7 @@ import VueScrollReveal from "scrollreveal";
   line-height: 1.5rem;
   position: absolute;
   bottom: 40px;
-  right: 300px;
+  right: 350px;
   transform: rotate(15deg); 
   transform-origin: right bottom; 
 
@@ -116,7 +116,7 @@ import VueScrollReveal from "scrollreveal";
   margin-right: 0.5rem;
   position: absolute;
   top: 325px;
-  right: 350px;
+  right: 400px;
 
   @media only screen and (max-width: 600px) {
     width: 2rem;

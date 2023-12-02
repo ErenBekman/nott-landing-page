@@ -101,7 +101,7 @@
     text-transform: uppercase;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1rem;
     &.login {
         text-decoration: underline;
         text-decoration-color: yellow;

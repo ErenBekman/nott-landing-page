@@ -96,6 +96,7 @@ import VueScrollReveal from "scrollreveal";
   font-family: 'BebasNeue-Book', sans-serif;
   text-transform: uppercase;
   font-size: 4rem;
+  line-height: 1;
   font-weight: 200;
 }
 
