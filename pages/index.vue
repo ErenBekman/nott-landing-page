@@ -18,7 +18,7 @@
       FaqSection: () => import("@/components/section/Faq"),
     },
     head() {
-      const title = `Nott - Nott Academy`;
+      const title = `Nott - Nott App`;
       const description = `100% Trusted, Search, Find, Sell Notes.`;
       return {
         title,

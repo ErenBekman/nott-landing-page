@@ -20,7 +20,7 @@
             </a>
 
             <div class="d-flex align-center justify-start mt-5">
-              <a href="https://www.instagram.com/nott.academy/" target="_blank">
+              <a href="https://www.instagram.com/nott.app/" target="_blank">
                 <v-btn small icon color="#c1ff02">
                   <v-icon large>mdi-instagram</v-icon>
                 </v-btn>
@@ -45,7 +45,7 @@ import VueScrollReveal from "scrollreveal";
     export default {
       methods: {
         sendEmail() {
-          const emailAddress = "erkin@nott.academy";
+          const emailAddress = "hello@nott.app";
           const subject = "Subject of the email";
           const body = "Body of the email";
           const mailtoUrl = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
