@@ -10,12 +10,12 @@
               <v-img :src="require('~/assets/images/logo/icon_white.svg')" contain width="75" height="75" />
             </div>
 
-            <div class="join-title color-main">Join us today.</div>
-            <h1 class="join-subtitle">Save Money, <br> Boost Your Grades.</h1> 
+            <div class="join-title color-main">{{ $t('sections.contact.title') }}</div>
+            <h1 class="join-subtitle">{{ $t('sections.contact.subtitle') }}</h1> 
             
-            <a href="https://nott.academy/" target="_blank">
+            <a href="https://app.nott.app/" target="_blank">
               <v-btn text class="btn-join mt-5">
-                <span>Join the club</span>
+                <span>{{ $t('global.join') }}</span>
               </v-btn>
             </a>
 
@@ -102,6 +102,7 @@ import VueScrollReveal from "scrollreveal";
 
 @media only screen and (max-width: 600px) {
   .contact-section{
+    padding: 0;
     .row{
       width: 100%;
       display: flex;

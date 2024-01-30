@@ -6,13 +6,12 @@
       <p class="main-subtitle">Buy and sell notes with us.</p>
       <div class="mt-10">
         <span> 
-          <span class="main-alttitle mb-7">Sign up</span>
-          <span class="main-alttitle">from here</span>
+          <span class="main-alttitle">{{ $t('sections.main.signup') }}</span>
           <v-img :src="require('~/assets/images/arrow/arrow.svg')" contain class="arrow-img" />
         </span>
-        <a href="https://nott.academy/" target="_blank">
+        <a href="https://app.nott.app/" target="_blank">
           <v-btn class="btn-join mt-5">
-            <span>Join the club</span>
+            <span class="text-capitalize">{{ $t('global.join') }}</span>
           </v-btn>
         </a>
       </div>
@@ -86,7 +85,7 @@ import VueScrollReveal from "scrollreveal";
   @media only screen and (max-width: 600px) {
     font-size: 2.5rem !important;
     line-height: 3rem;
-    text-align: center
+    text-align: center;
   }
 }
 
@@ -105,7 +104,7 @@ import VueScrollReveal from "scrollreveal";
   @media only screen and (max-width: 600px) {
     font-size: 2rem;
     line-height: 1rem;
-    bottom: 80px;
+    bottom: 60px;
     right: -50px;
   }
 }

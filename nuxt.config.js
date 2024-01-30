@@ -35,7 +35,10 @@ export default {
   css: ["~/assets/scss/theme.scss"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [
+    { src: "~/plugins/notify", ssr: false },
+    { src: "~/plugins/vue-confetti.js", ssr: false },
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -47,7 +50,34 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ["@nuxtjs/i18n"],
+
+  i18n: {
+    lazy: true,
+    langDir: "lang/",
+    locales: [
+      {
+        code: "en",
+        flag: "us",
+        english: "English",
+        name: "English",
+        file: "english.js",
+      },
+      {
+        code: "tr",
+        flag: "tr",
+        english: "Turkish",
+        name: "Türkçe",
+        file: "turkish.js",
+      },
+    ],
+    defaultLocale: "en",
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: "i18n_redirected",
+      redirectOn: "root", // recommended
+    },
+  },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {

@@ -1,20 +1,20 @@
 <template>
     <div class="why-section">
-        <v-card class="card-border" outlined>
+        <v-card class="card-border" outlined v-for="item in items" :key="item.id">
             <v-card-title class="mt-10">
-                <v-img :src="require('~/assets/images/people/3d-business-man-and-woman-working-with-laptop.png')" contain height="200" width="200" class="img-1" />
+                <v-img :src="item.image" contain height="200" width="200" class="img-1" />
             </v-card-title>
  
             <v-card-text class="d-flex flex-column justify-center align-center why-title">
-                <h1 class="text-h2 font-weight-bold text-uppercase">What</h1>
-                <h2 class="text-h4 text-uppercase">We do</h2>
+                <h1 class="text-h2 font-weight-bold text-uppercase" v-text="item.title" />
+                <h2 class="text-h4 text-uppercase" v-text="item.subtitle" />
                 <p class="text-center mt-5 grey-text">
-                    Nott is a <b> sustainable education platform </b> that facilitates the buying and selling of lecture notes for university students and moves their study processes to digital.
+                    {{ item.description }}
                 </p>
             </v-card-text>        
         </v-card>
 
-        <v-card class="card-border" outlined>
+        <!-- <v-card class="card-border" outlined>
             <v-card-title class="mt-10">
                 <v-img :src="require('~/assets/images/people/3d-business-young-woman-standing-with-laptop.png')" contain height="200" width="200" class="img-2" />
             </v-card-title>
@@ -23,7 +23,7 @@
                 <h1 class="text-h2 font-weight-bold text-uppercase">Why</h1>
                 <h2 class="text-h4 text-uppercase">We do it</h2>
                 <p class="text-center mt-5 grey-text">
-                    Every year <b > 180,000 trees are sacrificed </b> for notes’ exchanges, that’s why we came up with a more sustainable & digitalized solution.
+                    Every year <b> 180,000 trees are sacrificed </b> for notes’ exchanges, that’s why we came up with a more sustainable & digitalized solution.
                 </p>
             </v-card-text>
         </v-card>
@@ -40,41 +40,68 @@
                     For university & college students who wants to sell & buy notes for a better professional future - <b class="whiter-text"> it is for every grade. </b>
                 </p>
             </v-card-text>
-        </v-card>
+        </v-card> -->
     </div>
 </template>
 
 <script>
 import VueScrollReveal from "scrollreveal";
     export default {
-    mounted() {
-        VueScrollReveal().reveal('.img-1', {
-            origin: 'left',
-            duration: 1000,
-            distance: '25rem',
-            delay: 300,
-            // reset: true,
-            mobile: false
-        });
+        data() {
+            return {
+                items: [
+                {
+                    id: 1,
+                    image: require('~/assets/images/people/3d-business-man-and-woman-working-with-laptop.png'),
+                    title: this.$t('sections.why.what.title'),
+                    subtitle: this.$t('sections.why.what.subtitle'),
+                    description: this.$t('sections.why.what.description'),
+                },
+                {
+                    id: 2,
+                    image: require('~/assets/images/people/3d-business-young-woman-standing-with-laptop.png'),
+                    title: this.$t('sections.why.why.title'),
+                    subtitle: this.$t('sections.why.why.subtitle'),
+                    description: this.$t('sections.why.why.description'),
+                },
+                {
+                    id: 3,
+                    image: require('~/assets/images/people/business-3d-three-young-women-with-phones.png'),
+                    title: this.$t('sections.why.who.title'),
+                    subtitle: this.$t('sections.why.who.subtitle'),
+                    description: this.$t('sections.why.who.description'),
+                }
+            ]
+            }
+        },
+        mounted() {
+            VueScrollReveal().reveal('.img-1', {
+                origin: 'left',
+                duration: 1000,
+                distance: '25rem',
+                delay: 300,
+                // reset: true,
+                mobile: false
+            });
 
-        VueScrollReveal().reveal('.img-2', {
-            origin: 'bottom',
-            duration: 1000,
-            distance: '25rem',
-            delay: 300,
-            // reset: true,
-            mobile: false
-        });
+            VueScrollReveal().reveal('.img-2', {
+                origin: 'bottom',
+                duration: 1000,
+                distance: '25rem',
+                delay: 300,
+                // reset: true,
+                mobile: false
+            });
 
-        VueScrollReveal().reveal('.img-3', {
-            origin: 'right',
-            duration: 1000,
-            distance: '25rem',
-            delay: 300,
-            // reset: true,
-            mobile: false
-        });
-     },
+            VueScrollReveal().reveal('.img-3', {
+                origin: 'right',
+                duration: 1000,
+                distance: '25rem',
+                delay: 300,
+                // reset: true,
+                mobile: false
+            });
+        },
     }
 </script>
 
