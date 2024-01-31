@@ -11,7 +11,7 @@ export default {
             signup: 'Buradan Kaydol'
         },
         supporter: {
-            title: 'Destekçileri'
+            title: 'Destekleyenler',
         },
         why: {
             what: {

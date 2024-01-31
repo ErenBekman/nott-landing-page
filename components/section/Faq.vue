@@ -122,6 +122,10 @@
         .faq-subtitle{
             font-size: 2rem;
         }
+
+        .emoji {
+            display: none;
+        }
     }
 }
 

@@ -2,7 +2,7 @@
     <div class="supporter-section">
      <div class="d-flex align-center justify-left">
       <h1 class="text-capitalize supporter-title">{{ $t('sections.supporter.title') }}</h1>
-      <div class="ml-3 mb-3">
+      <div class="supporter-section-container">
         <v-img :src="require('~/assets/images/logo/nott-dark.svg')" class="supporter-section-img" contain />
       </div>
      </div>
@@ -35,7 +35,10 @@
 .supporter-section-img{
     width: 100px;
     height: 100px;
-    text-transform: capitalize;
+}
+
+.supporter-section-container{
+    margin: 0 0 20px 10px;
 }
 
 .supporter-images-container{
@@ -60,6 +63,7 @@
         align-items: center;
         justify-content: center;
         margin-top: 5rem;
+        
 
         h1{
             font-size: 1.5rem;
@@ -82,8 +86,10 @@
         .supporter-title {
            font-size: 2rem;
         }
-
         
+        .supporter-section-container{
+           margin: 0 0 25px 10px;
+        }
     }
 }
 

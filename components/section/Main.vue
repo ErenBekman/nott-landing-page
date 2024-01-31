@@ -107,6 +107,11 @@ import VueScrollReveal from "scrollreveal";
     bottom: 60px;
     right: -50px;
   }
+
+  @media only screen and (min-width: 1500px) {
+      top: 320px;
+      right: 650px;
+   }
 }
 
 .arrow-img{
@@ -123,12 +128,33 @@ import VueScrollReveal from "scrollreveal";
     top: 600px;
     right: -30px;
   }
+
+  @media only screen and (min-width: 1500px) {
+      top: 320px;
+      right: 750px;
+   }
 }
 
+
+.main-right {
+  position: absolute;
+  top: 75;
+  right: 0;
+}
 
 .main-right-img{
   width: 450px;
   height: 400px;
+}
+
+.circle-img{
+  background-color: #c1ff02;
+  border-radius: 50%;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 75px;
+  right: 0;
 }
 
 
@@ -157,4 +183,12 @@ import VueScrollReveal from "scrollreveal";
     font-size: 0.9rem !important;
   }
 }
+
+@media only screen and (min-width: 1500px) {
+  .circle-img{
+    right: 240px;
+  }
+}
+
+
 </style>
