@@ -1,7 +1,7 @@
 <template>
     <div class="supporter-section">
      <div class="d-flex align-center justify-left">
-      <h1 class="text-capitalize supporter-title">{{ $t('sections.supporter.title') }}</h1>
+      <h1 class="supporter-title">{{ $t('sections.supporter.title') }}</h1>
       <div class="supporter-section-container">
         <v-img :src="require('~/assets/images/logo/nott-dark.svg')" class="supporter-section-img" contain />
       </div>

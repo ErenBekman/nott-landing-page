@@ -1,8 +1,9 @@
 <template>
   <div>
     <MainSection />
-    <SupporterSection />
+    <SupporterSection class="mt-4" />
     <WhySection />
+    <EnvoySection />
     <FaqSection />
     <ContactSection />
   </div>
@@ -16,6 +17,7 @@
       SupporterSection: () => import("@/components/section/Supporter"),
       WhySection: () => import("@/components/section/Why"),
       FaqSection: () => import("@/components/section/Faq"),
+      EnvoySection: () => import("@/components/section/Envoy"),
     },
     head() {
       const title = `Nott - Nott App`;

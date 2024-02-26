@@ -33,6 +33,21 @@ export default {
         contact: {
             title: 'Bugün bize katılın.',
             subtitle: 'Para Tasarrufu Yapın, Notlarınızı Yükseltin.'
+        },
+        envoy: {
+          title: 'Sende Nott Elçisi Olmak İster Misin?',
+          form: {
+            join: 'Sende Bize Katıl, Elçi Ol!',
+            join_text: 'Elçi olmak için aşağıdaki formu doldurun.',
+            success: 'Nott App Elçi başvurunuz başarıyla gönderildi.',
+            error: 'Başvurunuzu gönderirken bir hata oluştu.'
+          },
+          label: {
+            name: 'Ad Soyad',
+            email: 'E-posta',
+            video: 'Video Dosyası',
+            university: 'Üniversite Seçiniz',
+          }
         }
     },
     faq: {
@@ -85,5 +100,6 @@ export default {
       },
     global: {
         join: 'Kulübe Katıl',
+        send: 'Gönder',
     }
 };

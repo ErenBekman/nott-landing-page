@@ -5,6 +5,7 @@
       <v-container class="n-container">
         <Nuxt />
       </v-container>
+      <notifications position="bottom center" />
     </v-main>
   </v-app>
 </template>

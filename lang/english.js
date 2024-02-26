@@ -35,6 +35,21 @@ export default {
         contact: {
             title: 'Join us today.',
             subtitle: 'Save Money, Boost Your Grades.'
+        },
+        envoy: {
+          title: 'Do You Want to Be a Nott App Envoy?',
+          form: {
+            join: 'Join Us, Be an Envoy!',
+            join_text: 'Fill out the form below to become an envoy.',
+            success: 'Your Nott App Ambassador application has been sent successfully.',
+            error: 'An error occurred while sending your application.',
+          },
+          label: {
+            name: 'Full Name',
+            email: 'E-mail',
+            video: 'Video File',
+            university: 'Select University',
+          },
         }
     },
     faq: {
@@ -87,5 +102,6 @@ export default {
     },
     global: {
         join: 'Join the club',
+        send: 'Send',
     }
 };

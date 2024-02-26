@@ -1,4 +1,5 @@
-import colors from 'vuetify/es5/util/colors'
+import colors from 'vuetify/es5/util/colors';
+require("dotenv").config();
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
@@ -12,7 +13,7 @@ export default {
       lang: "en",
     },
     meta: [
-      { charset: "utf-8" },
+      { charset: "UTF-8" },
       {
         name: "viewport",
         content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
@@ -50,7 +51,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["@nuxtjs/i18n"],
+  modules: ["@nuxtjs/i18n","@nuxtjs/axios"],
 
   i18n: {
     lazy: true,
@@ -77,6 +78,12 @@ export default {
       cookieKey: "i18n_redirected",
       redirectOn: "root", // recommended
     },
+  },
+
+  axios: {
+    baseURL: process.env.BASE_URL || "https://api.nott.app/api",
+    withCredentials: true,
+    credentials: true,
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
