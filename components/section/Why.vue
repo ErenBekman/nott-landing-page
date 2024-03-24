@@ -2,7 +2,13 @@
     <div class="why-section">
         <v-card class="card-border" outlined v-for="item in items" :key="item.id">
             <v-card-title class="mt-10">
-                <v-img :src="item.image" contain height="200" width="200" class="img-1" />
+                <v-img 
+                    :src="item.image" 
+                    contain 
+                    height="200" 
+                    width="200" 
+                    :class="`img-${item.id}`"
+                />
             </v-card-title>
  
             <v-card-text class="d-flex flex-column justify-center align-center why-title">
@@ -13,34 +19,6 @@
                 </p>
             </v-card-text>        
         </v-card>
-
-        <!-- <v-card class="card-border" outlined>
-            <v-card-title class="mt-10">
-                <v-img :src="require('~/assets/images/people/3d-business-young-woman-standing-with-laptop.png')" contain height="200" width="200" class="img-2" />
-            </v-card-title>
-
-            <v-card-text class="d-flex flex-column justify-center align-center why-title">
-                <h1 class="text-h2 font-weight-bold text-uppercase">Why</h1>
-                <h2 class="text-h4 text-uppercase">We do it</h2>
-                <p class="text-center mt-5 grey-text">
-                    Every year <b> 180,000 trees are sacrificed </b> for notes’ exchanges, that’s why we came up with a more sustainable & digitalized solution.
-                </p>
-            </v-card-text>
-        </v-card>
-        
-        <v-card class="card-border" outlined>
-            <v-card-title class="mt-10">
-                <v-img :src="require('~/assets/images/people/business-3d-three-young-women-with-phones.png')" contain height="200" width="200" class="img-3" />
-            </v-card-title>
-
-            <v-card-text class="d-flex flex-column justify-center align-center why-title">
-                <h1 class="text-h2 font-weight-bold text-uppercase whiter-text">Who</h1>
-                <h2 class="text-h4 text-uppercase">We do it for</h2>
-                <p class="text-center mt-5 grey-text">
-                    For university & college students who wants to sell & buy notes for a better professional future - <b class="whiter-text"> it is for every grade. </b>
-                </p>
-            </v-card-text>
-        </v-card> -->
     </div>
 </template>
 
@@ -137,6 +115,13 @@ import VueScrollReveal from "scrollreveal";
 .grey-text {
     color:#f9f9f9;
     font-weight: 400;
+}
+
+.why-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
 }
 
 @media only screen and (max-width: 600px) {

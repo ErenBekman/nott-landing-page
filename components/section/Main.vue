@@ -4,21 +4,33 @@
       <span class="main-title">Think <span class="color-main main-second-title">green</span>,</span> <br>
       <span class="main-title">Study <span class="color-main main-second-title">smart</span>.</span>
       <p class="main-subtitle">Buy and sell notes with us.</p>
-      <div class="mt-10">
+      <div class="mt-13">
         <span> 
-          <span class="main-alttitle">{{ $t('sections.main.signup') }}</span>
-          <v-img :src="require('~/assets/images/arrow/arrow.svg')" contain class="arrow-img" />
+          <span class="main-alttitle">
+            {{ $t('sections.main.signup') }}
+          </span>
+          <v-img 
+            :src="require('~/assets/images/arrow/arrow.svg')" 
+            class="arrow-img" 
+            contain 
+          />
         </span>
         <a href="https://app.nott.app/" target="_blank">
           <v-btn class="btn-join mt-5">
-            <span class="text-capitalize">{{ $t('global.join') }}</span>
+            <span class="text-capitalize">
+              {{ $t('global.join') }}
+            </span>
           </v-btn>
         </a>
       </div>
     </v-col>
     <v-col cols="5" class="main-right">
       <div class="circle-img"></div>
-      <v-img :src="require('~/assets/images/people/3d-business-young-women-sitting-with-laptop-on-the-table.png')" contain class="main-right-img" />
+      <v-img 
+        :src="require('~/assets/images/people/3d-business-young-women-sitting-with-laptop-on-the-table.png')" 
+        class="main-right-img" 
+        contain 
+      />
     </v-col>
   </v-row>
 </template>
@@ -105,7 +117,7 @@ import VueScrollReveal from "scrollreveal";
     font-size: 2rem;
     line-height: 1rem;
     bottom: 60px;
-    right: -50px;
+    right: -80px;
   }
 
   @media only screen and (min-width: 1500px) {
@@ -117,7 +129,7 @@ import VueScrollReveal from "scrollreveal";
 .arrow-img{
   width: 3.5rem;
   height: 3.5rem;
-  margin-right: 0.5rem;
+  margin-right: 2rem;
   position: absolute;
   top: 325px;
   right: 400px;
@@ -126,7 +138,7 @@ import VueScrollReveal from "scrollreveal";
     width: 2rem;
     height: 2rem;
     top: 600px;
-    right: -30px;
+    right: -50px;
   }
 
   @media only screen and (min-width: 1500px) {

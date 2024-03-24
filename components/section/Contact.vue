@@ -26,11 +26,11 @@
                 </v-btn>
               </a>
               <a href="https://linkedin.com/company/nottacademy/" target="_blank">
-                <v-btn small icon color="#c1ff02" class="ml-2">
+                <v-btn small icon color="#c1ff02" class="ml-3">
                   <v-icon large>mdi-linkedin</v-icon>
                 </v-btn>
               </a>
-              <v-btn small icon color="#c1ff02" class="ml-2" @click="sendEmail">
+              <v-btn small icon color="#c1ff02" class="ml-3" @click="sendEmail">
                 <v-icon large>mdi-email</v-icon>
               </v-btn>
             </div>

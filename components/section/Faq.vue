@@ -104,7 +104,7 @@
 }
 
 .faq-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .faq-subtitle{

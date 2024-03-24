@@ -1,13 +1,25 @@
 <template>
     <div class="supporter-section">
      <div class="d-flex align-center justify-left">
-      <h1 class="supporter-title">{{ $t('sections.supporter.title') }}</h1>
+      <h1 class="supporter-title">
+        {{ $t('sections.supporter.title') }}
+    </h1>
       <div class="supporter-section-container">
-        <v-img :src="require('~/assets/images/logo/nott-dark.svg')" class="supporter-section-img" contain />
+        <v-img 
+            :src="require('~/assets/images/logo/nott-dark.svg')" 
+            class="supporter-section-img" 
+            contain 
+        />
       </div>
      </div>
      <div class="supporter-images-container">
-        <v-img v-for="supporter in supporters" :key="supporter.id" :src="supporter.img" contain class="supporter-images" />        
+        <v-img 
+            v-for="supporter in supporters" 
+            :key="supporter.id" 
+            :src="supporter.img" 
+            class="supporter-images" 
+            contain 
+        />        
      </div>
     </div>
 </template>
@@ -29,7 +41,7 @@
 <style lang="scss" scoped>
 
 .supporter-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .supporter-section-img{
@@ -51,7 +63,7 @@
 
 .supporter-images {
     width: 200px;
-    height: 200px;
+    height: 125px;
     margin: 0 4rem;
     max-width: 100%;
 }
