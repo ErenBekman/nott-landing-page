@@ -37,10 +37,10 @@ export default {
             subtitle: 'Save Money, Boost Your Grades.'
         },
         envoy: {
-          title: 'Do You Want to Be a Nott App Envoy?',
+          title: 'Do You Want to Be a Nott App Ambassador?',
           form: {
-            join: 'Join Us, Be an Envoy!',
-            join_text: 'Fill out the form below to become an envoy.',
+            join: 'Join Us, Be an Ambassador!',
+            join_text: 'Fill out the form below to become an ambassador.',
             success: 'Your Nott App Ambassador application has been sent successfully.',
             error: 'An error occurred while sending your application.',
           },
