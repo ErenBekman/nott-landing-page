@@ -5,6 +5,7 @@
               <div class="circle-content-img"></div>
               <v-img :src="require('~/assets/images/people/business-3d-young-women-standing.png')" contain height="400" width="400" class="content-img" />
           </v-col>
+
           <v-col cols="6" class="join-section anm-right">
             <div class="join-img">
               <v-img :src="require('~/assets/images/logo/icon_white.svg')" contain width="75" height="75" />
@@ -12,20 +13,15 @@
 
             <div class="join-title color-main">{{ $t('sections.contact.title') }}</div>
             <h1 class="join-subtitle">{{ $t('sections.contact.subtitle') }}</h1> 
-            
-            <a href="https://app.nott.app/" target="_blank">
-              <v-btn text class="btn-join mt-5">
-                <span>{{ $t('global.join') }}</span>
-              </v-btn>
-            </a>
+            <JoinButton class="my-2" />
 
-            <div class="d-flex align-center justify-start mt-5">
+            <div class="d-flex align-center justify-start my-5">
               <a href="https://www.instagram.com/nott.app/" target="_blank">
                 <v-btn small icon color="#c1ff02">
                   <v-icon large>mdi-instagram</v-icon>
                 </v-btn>
               </a>
-              <a href="https://linkedin.com/company/nottacademy/" target="_blank">
+              <a href="https://linkedin.com/company/nottco/" target="_blank">
                 <v-btn small icon color="#c1ff02" class="ml-3">
                   <v-icon large>mdi-linkedin</v-icon>
                 </v-btn>
@@ -43,6 +39,9 @@
 <script>
 import VueScrollReveal from "scrollreveal";
     export default {
+      components:{
+            JoinButton: () => import("@/components/common/JoinButton")
+      },
       methods: {
         sendEmail() {
           const emailAddress = "hello@nott.app";
@@ -128,7 +127,7 @@ import VueScrollReveal from "scrollreveal";
 
     .join-title{
       font-size: 6rem !important;
-      // line-height: 3rem;
+      line-height: 6rem;
       text-align: center;
     }
 

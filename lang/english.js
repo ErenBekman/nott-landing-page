@@ -103,5 +103,6 @@ export default {
     global: {
         join: 'Join the club',
         send: 'Send',
+        download_now: 'Download Now',
     }
 };

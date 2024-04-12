@@ -101,5 +101,6 @@ export default {
     global: {
         join: 'Kulübe Katıl',
         send: 'Gönder',
+        download_now: 'Şimdi İndir',
     }
 };

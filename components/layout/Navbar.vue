@@ -11,12 +11,26 @@
                 <v-list nav>
                     <v-list-item>
                         <a href="https://app.nott.app/" target="_blank">
-                            <v-list-item-title class="text-capitalize text-caption">{{ $t('navbar.login') }}</v-list-item-title>
+                            <v-list-item-title class="text-capitalize text-caption">
+                                <v-icon left color="#c1ff02">mdi-login</v-icon>
+                                {{ $t('global.join') }}
+                            </v-list-item-title>
                         </a>
                     </v-list-item>
                     <v-list-item>
-                        <a href="https://app.nott.app/" target="_blank">
-                            <v-list-item-title class="text-capitalize text-caption">{{ $t('global.join') }}</v-list-item-title>
+                        <a href="https://apps.apple.com/app/nott-academy/id6449980598" target="_blank">
+                            <v-list-item-title class="text-capitalize text-caption">
+                                <v-icon left color="#c1ff02">mdi-apple</v-icon>
+                                Apple Store
+                            </v-list-item-title>
+                        </a>
+                    </v-list-item>
+                    <v-list-item>
+                        <a href="https://play.google.com/store/apps/details?id=academy.nott" target="_blank">
+                            <v-list-item-title class="text-capitalize text-caption">
+                                <v-icon left color="#c1ff02">mdi-google-play</v-icon>
+                                Play Store
+                            </v-list-item-title>
                         </a>
                     </v-list-item>
                 </v-list>
@@ -29,60 +43,21 @@
 
         <v-spacer />
 
-        <v-btn icon small @click="changeLocale">
+        <v-btn icon small @click="changeLocale" class="mr-3">
             <v-avatar tile :size="20">
                 <v-img class="flag" :src="require(`~/assets/images/flags/${currentLocale.code}.svg`)" />
             </v-avatar>
         </v-btn>
 
-        <a href="https://app.nott.app/" target="_blank">
-            <v-btn text tile class="rounded-lg">
-                <span class="nav-title login mr-2 text-capitalize">{{ $t('navbar.login') }}</span>
-            </v-btn>
-        </a>
-
-        <v-menu transition="slide-y-transition" bottom offset-y min-width="300">
-            <template v-slot:activator="{ on, attrs }">
-                <v-btn class="btn-join" v-bind="attrs" v-on="on">
-                    <span class="text-capitalize">{{ $t('global.join') }}</span>
-                </v-btn>
-            </template>
-            <v-card class="d-flex flex-column justify-center align-center rounded-lg">
-                <v-card-title>
-                    <a href="https://apps.apple.com/app/nott-academy/id6449980598" target="_blank">
-                        <v-btn fab color="yellow">
-                            <v-icon color="black">mdi-apple</v-icon>
-                        </v-btn>
-                    </a>
-                    
-                    <a href="https://play.google.com/store/apps/details?id=academy.nott" target="_blank">
-                        <v-btn fab color="yellow" class="ml-2">
-                            <v-icon color="black">mdi-android</v-icon>
-                        </v-btn>
-                    </a>
-                </v-card-title>
-
-                <v-card-text class="d-flex flex-column align-center justify-center">
-                    <a href="https://app.nott.app/" target="_blank">
-                        <v-btn text outlined class="rounded-lg nav-btn-border" width="225">
-                            <v-icon left size="20">mdi-google</v-icon>
-                            <span class="text-capitalize">{{ $t('navbar.signup.google') }}</span>
-                        </v-btn>
-                    </a>
-                    <a href="https://app.nott.app/" target="_blank" >
-                        <v-btn text outlined class="rounded-lg nav-btn-border mt-3" width="225" style="text-transform: lowercase !important;">
-                            <v-icon left size="20">mdi-apple</v-icon>
-                            <span class="text-capitalize">{{ $t('navbar.signup.apple') }}</span>
-                        </v-btn>
-                    </a>
-                </v-card-text>
-            </v-card>
-        </v-menu>
+        <JoinButton class="join-btn" :download="true" />
     </v-app-bar>
 </template>
 
 <script>
     export default {
+        components:{
+            JoinButton: () => import("@/components/common/JoinButton")
+        },
         computed: {
             currentLocale() {
               return this.$i18n.locales.find((i) => i.code === this.$i18n.locale);
@@ -177,7 +152,7 @@
     }
     
 
-    .btn-join {
+    .join-btn {
         display: none;
     }
 }

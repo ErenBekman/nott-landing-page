@@ -1,8 +1,8 @@
 <template>
     <div class="envoy-section">
-      <h1 class="envoy-title"> {{ $t('sections.envoy.title') }} </h1>
-      <v-row>
-          <v-col cols="12" sm="12" md="6" lg="6" xl="6">
+    <h1 class="envoy-title"> {{ $t('sections.envoy.title') }} </h1>
+    <v-row>
+        <v-col cols="12" sm="12" md="6" lg="6" xl="6" class="video-section">
             <video ref="videoPlayer" width="100%" height="350" controls>
                 <source src="https://nott.ams3.cdn.digitaloceanspaces.com/nott-video.MP4">
                 Your browser does not support the video tag.
@@ -173,6 +173,18 @@
     font-weight: 600;
     margin-bottom: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+    .envoy-title {
+        font-size: 2rem !important;
+        display: none;
+    }
+
+    .video-section {
+        display: none;
+    }
+}
+
 
 .v-input .v-label {
     font-size: 20px !important; 

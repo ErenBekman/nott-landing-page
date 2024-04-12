@@ -4,7 +4,7 @@
       <span class="main-title">Think <span class="color-main main-second-title">green</span>,</span> <br>
       <span class="main-title">Study <span class="color-main main-second-title">smart</span>.</span>
       <p class="main-subtitle">Buy and sell notes with us.</p>
-      <div class="mt-13">
+      <div class="main-join-container">
         <span> 
           <span class="main-alttitle">
             {{ $t('sections.main.signup') }}
@@ -15,13 +15,7 @@
             contain 
           />
         </span>
-        <a href="https://app.nott.app/" target="_blank">
-          <v-btn class="btn-join mt-5">
-            <span class="text-capitalize">
-              {{ $t('global.join') }}
-            </span>
-          </v-btn>
-        </a>
+        <JoinButton />
       </div>
     </v-col>
     <v-col cols="5" class="main-right">
@@ -38,6 +32,9 @@
 <script>
 import VueScrollReveal from "scrollreveal";
     export default {
+      components:{
+        JoinButton: () => import("@/components/common/JoinButton")
+      },
       mounted() {
           VueScrollReveal().reveal(".main-left", {
             origin: "left",
@@ -108,7 +105,7 @@ import VueScrollReveal from "scrollreveal";
   font-weight: 300;
   line-height: 1.5rem;
   position: absolute;
-  bottom: 40px;
+  bottom: 50px;
   right: 350px;
   transform: rotate(15deg); 
   transform-origin: right bottom; 
@@ -131,8 +128,8 @@ import VueScrollReveal from "scrollreveal";
   height: 3.5rem;
   margin-right: 2rem;
   position: absolute;
-  top: 325px;
-  right: 400px;
+  top: 330px;
+  right: 375px;
 
   @media only screen and (max-width: 600px) {
     width: 2rem;
@@ -145,6 +142,11 @@ import VueScrollReveal from "scrollreveal";
       top: 320px;
       right: 750px;
    }
+}
+
+.main-join-container{
+  margin-top: 5.5rem !important;
+  // position: relative;
 }
 
 

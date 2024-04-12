@@ -3,7 +3,7 @@
      <div class="d-flex align-center justify-left">
       <h1 class="supporter-title">
         {{ $t('sections.supporter.title') }}
-    </h1>
+      </h1>
       <div class="supporter-section-container">
         <v-img 
             :src="require('~/assets/images/logo/nott-dark.svg')" 
@@ -17,7 +17,8 @@
             v-for="supporter in supporters" 
             :key="supporter.id" 
             :src="supporter.img" 
-            class="supporter-images" 
+            class="supporter-images"
+            @click="goToSupporter(supporter.link)"
             contain 
         />        
      </div>
@@ -29,16 +30,31 @@
         data() {
             return {
                 supporters: [
-                    {id: 1, img: require('~/assets/images/supporters/eccording.svg') },
-                    {id: 2, img: require('~/assets/images/supporters/itu.svg') },
-                    {id: 3, img: require('~/assets/images/supporters/aws.svg') },
+                    {id: 1, img: require('~/assets/images/supporters/eccording.svg'), link: 'https://ecording.org/en/' },
+                    {id: 2, img: require('~/assets/images/supporters/itu.svg'), link: 'https://itucekirdek.com/' },
+                    {id: 3, img: require('~/assets/images/supporters/aws.svg'), link: 'https://aws.amazon.com/' },
                 ]
             }
         },
+        methods: {
+            goToSupporter(link){
+                window.open(link, '_blank');
+            }
+        }
     }
 </script>
 
 <style lang="scss" scoped>
+
+.supporter-section {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    @media only screen and (max-width: 600px) {
+        margin-top: 4rem !important;
+    }
+}
 
 .supporter-title {
     font-size: 3rem;
@@ -64,8 +80,13 @@
 .supporter-images {
     width: 200px;
     height: 125px;
-    margin: 0 4rem;
+    margin: 5px;
+    // margin: 0 4rem;
     max-width: 100%;
+
+    &:hover{
+        transform: scale(1.1);
+    }
 }
 
 @media only screen and (max-width: 600px) {
