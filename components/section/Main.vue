@@ -105,16 +105,16 @@ import VueScrollReveal from "scrollreveal";
   font-weight: 300;
   line-height: 1.5rem;
   position: absolute;
-  bottom: 50px;
-  right: 350px;
+  top: calc(50% - 1rem);
+  right: calc(50% - 1rem);
   transform: rotate(15deg); 
   transform-origin: right bottom; 
 
   @media only screen and (max-width: 600px) {
     font-size: 2rem;
     line-height: 1rem;
-    bottom: 60px;
-    right: -80px;
+    top: calc(50% - 3rem);
+    right: calc(50% - 10rem);
   }
 
   @media only screen and (min-width: 1500px) {
@@ -125,17 +125,17 @@ import VueScrollReveal from "scrollreveal";
 
 .arrow-img{
   width: 3.5rem;
-  height: 3.5rem;
-  margin-right: 2rem;
+  height: 3rem;
+  margin-right: 3rem;
   position: absolute;
-  top: 330px;
-  right: 375px;
+  top: calc(50% - 1rem);
+  right: calc(50% - 0rem);
 
   @media only screen and (max-width: 600px) {
     width: 2rem;
     height: 2rem;
-    top: 600px;
-    right: -50px;
+    top: calc(50% - 3rem);
+    right: calc(50% - 10rem);
   }
 
   @media only screen and (min-width: 1500px) {
@@ -145,8 +145,10 @@ import VueScrollReveal from "scrollreveal";
 }
 
 .main-join-container{
+  display: flex;
+  align-items: center;
   margin-top: 5.5rem !important;
-  // position: relative;
+  position: relative;
 }
 
 
