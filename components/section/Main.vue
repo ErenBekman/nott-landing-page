@@ -5,17 +5,17 @@
       <span class="main-title">Study <span class="color-main main-second-title">smart</span>.</span>
       <p class="main-subtitle">Buy and sell notes with us.</p>
       <div class="main-join-container">
-        <span> 
+        <JoinButton />
+        <div class="main-join"> 
           <span class="main-alttitle">
             {{ $t('sections.main.signup') }}
           </span>
           <v-img 
             :src="require('~/assets/images/arrow/arrow.svg')" 
-            class="arrow-img" 
+            class="main-arrow-img" 
             contain 
           />
-        </span>
-        <JoinButton />
+        </div>
       </div>
     </v-col>
     <v-col cols="5" class="main-right">
@@ -98,57 +98,39 @@ import VueScrollReveal from "scrollreveal";
   }
 }
 
-
-.main-alttitle{
-  font-family: 'Just Me Again Down Here', cursive !important;
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 1.5rem;
-  position: absolute;
-  top: calc(50% - 1rem);
-  right: calc(50% - 1rem);
-  transform: rotate(15deg); 
-  transform-origin: right bottom; 
-
-  @media only screen and (max-width: 600px) {
-    font-size: 2rem;
-    line-height: 1rem;
-    top: calc(50% - 3rem);
-    right: calc(50% - 10rem);
-  }
-
-  @media only screen and (min-width: 1500px) {
-      top: 320px;
-      right: 650px;
-   }
-}
-
-.arrow-img{
-  width: 3.5rem;
-  height: 3rem;
-  margin-right: 3rem;
-  position: absolute;
-  top: calc(50% - 1rem);
-  right: calc(50% - 0rem);
-
-  @media only screen and (max-width: 600px) {
-    width: 2rem;
-    height: 2rem;
-    top: calc(50% - 3rem);
-    right: calc(50% - 10rem);
-  }
-
-  @media only screen and (min-width: 1500px) {
-      top: 320px;
-      right: 750px;
-   }
-}
-
 .main-join-container{
   display: flex;
   align-items: center;
-  margin-top: 5.5rem !important;
+  margin-top: 2rem;
   position: relative;
+
+  .main-join {
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    width: 100px;
+    height: 100px;
+    position: relative;
+
+    .main-alttitle{
+      font-family: 'Just Me Again Down Here', cursive !important;
+      font-weight: 300;
+      font-size: 2rem;
+      line-height: 2rem;
+      position: absolute;
+      transform: rotate(30deg);
+      -webkit-transform: rotate(30deg);
+      -moz-transform: rotate(30deg);
+      -o-transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+    }
+    
+    .main-arrow-img{
+      width: 3.5rem;
+      height: 2.5rem;
+      margin-top: 4rem;
+    }
+  }
+
 }
 
 
@@ -198,6 +180,23 @@ import VueScrollReveal from "scrollreveal";
   .btn-join span {
     font-size: 0.9rem !important;
   }
+
+  .main-join-container{
+    // margin-top: 1rem !important;
+    .main-join {
+      margin-left: 0 !important;
+  
+      .main-alttitle{
+        font-size: 2rem !important;
+        line-height: 1rem !important;
+      }
+      
+      .main-arrow-img{
+        width: 2rem !important;
+        height: 2rem !important;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 1500px) {
@@ -205,6 +204,4 @@ import VueScrollReveal from "scrollreveal";
     right: 240px;
   }
 }
-
-
 </style>
