@@ -162,7 +162,8 @@ import VueScrollReveal from "scrollreveal";
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 1rem;
+    // padding: 0 1rem;
+    margin-top: 2rem;
   }
   .main-left {
     position: relative;
