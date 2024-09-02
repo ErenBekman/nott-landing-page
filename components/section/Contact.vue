@@ -30,6 +30,15 @@
                 <v-icon large>mdi-email</v-icon>
               </v-btn>
             </div>
+            <div>
+              <v-img :src="require('~/assets/images/bank/iyzico.png')" contain height="auto" max-width="100%" />
+            </div>
+            <div class="mt-10">
+              <v-btn text color="blue" :to="localePath({ name: 'about' })">{{ $t('sections.contact.about') }}</v-btn>
+              <v-btn text color="blue" :to="localePath({ name: 'distance_sales_contract' })">{{ $t('sections.contact.distance_sales_contract') }}</v-btn>
+              <v-btn text color="blue" :to="localePath({ name: 'privacy_policy' })">{{ $t('sections.contact.privacy_policy') }}</v-btn>
+              <v-btn text color="blue" :to="localePath({ name: 'return_policy' })">{{ $t('sections.contact.return_policy') }}</v-btn>
+            </div>
           </v-col>
       </v-row>
     </div>

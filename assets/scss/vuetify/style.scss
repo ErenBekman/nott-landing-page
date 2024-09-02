@@ -48,19 +48,28 @@ a::before {
 
 
 body {
-  user-select: none; /* supported by Chrome and Opera */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  /* supported by Chrome and Opera */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
   font-size: 18px;
 }
 
 html {
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
 }
 
 .vue-notification {
@@ -105,9 +114,9 @@ html {
   align-items: center;
   justify-content: center;
   border: 1px solid var(--main) !important;
-  border-radius: 40px  !important;
-  box-shadow: 0 0 10px rgba(255, 255, 0, 0.5); 
-  transition: box-shadow 0.3s ease; 
+  border-radius: 40px !important;
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+  transition: box-shadow 0.3s ease;
   background-color: #000 !important;
   width: 300px;
   height: 600px;
@@ -118,7 +127,7 @@ html {
 }
 
 // button
-.btn-join{
+.btn-join {
   background-color: #c1ff02 !important;
   color: #000 !important;
   border-radius: 50px !important;
@@ -134,7 +143,7 @@ html {
   text-transform: uppercase;
 }
 
-.btn-send{
+.btn-send {
   background-color: #c1ff02 !important;
   color: #000 !important;
   border-radius: 50px !important;
@@ -150,7 +159,7 @@ html {
 
 
 
-.main-section{
+.main-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -159,7 +168,7 @@ html {
   z-index: 1;
 }
 
-.why-section{
+.why-section {
   margin-top: 100px;
   display: flex;
   align-items: center;
@@ -167,7 +176,7 @@ html {
 }
 
 
-.contact-section{
+.contact-section {
   margin-top: 100px;
   display: flex;
   align-items: center;
@@ -175,7 +184,7 @@ html {
   position: relative;
 }
 
-.circle-content-img{
+.circle-content-img {
   background-color: #c1ff02;
   border-radius: 50%;
   position: absolute;
@@ -188,16 +197,15 @@ html {
 @keyframes shine {
 
   0% {
-    box-shadow: 0 0 20px 15px rgba(193, 255, 2, 0.8); 
+    box-shadow: 0 0 20px 15px rgba(193, 255, 2, 0.8);
   }
 
   50% {
-    box-shadow: 0 0 20px 15px rgba(193, 255, 2, 0.8); 
+    box-shadow: 0 0 20px 15px rgba(193, 255, 2, 0.8);
   }
 
   100% {
-    box-shadow: 0 0 20px 15px rgba(193, 255, 2, 0.8); 
+    box-shadow: 0 0 20px 15px rgba(193, 255, 2, 0.8);
   }
-  
-}
 
+}

@@ -37,9 +37,9 @@
             </v-card>
         </v-menu>
         
-        <div>
+        <nuxt-link :to="localePath({ name: 'index'})">
             <v-img :src="require('~/assets/images/logo/icon_dark.svg')" contain width="50" height="50" class="img" /> 
-        </div>
+        </nuxt-link>
 
         <v-spacer />
 
