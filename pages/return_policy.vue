@@ -66,7 +66,7 @@
     export default {
         data() {
             return {
-                pdfUrl: '/NOTT_APP_İADE_İPTAL.pdf'
+                pdfUrl: '/NOTT_APP_RETURN_POLICY.pdf'
             }
         }
     }
