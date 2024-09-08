@@ -1,12 +1,25 @@
 <template>
     <div>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ad consequatur quisquam, nulla minus harum reiciendis ratione, totam dolorum iste deleniti deserunt beatae aliquid sequi est incidunt ea pariatur culpa?
+        <h1>{{ $t('sections.contact.distance_sales_contract') }}</h1>
+        <iframe
+        :src="pdfUrl"
+        width="100%"
+        height="1000px"
+        type="application/pdf"
+        >
+        Bu PDF'yi görüntüleyemiyorsanız, lütfen dosyayı indirin:
+        <a :href="pdfUrl">PDF İndir</a>
+        </iframe>
     </div>
 </template>
 
 <script>
     export default {
-        
+        data() {
+            return {
+                pdfUrl: '/Updated_Kullanıcı_Sozlesmesi_Nott_App.pdf'
+            }
+        }
     }
 </script>
 
