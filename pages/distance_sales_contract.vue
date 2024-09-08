@@ -17,7 +17,7 @@
     export default {
         data() {
             return {
-                pdfUrl: '/Updated_Kullanıcı_Sozlesmesi_Nott_App.pdf'
+                pdfUrl: '/NOTT_APP_MESAFELİ_SATIŞ.pdf'
             }
         }
     }

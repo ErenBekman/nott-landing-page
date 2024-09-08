@@ -51,10 +51,10 @@
     <div>
         <h1>{{ $t('sections.contact.return_policy') }}</h1>
         <iframe
-        :src="pdfUrl"
-        width="100%"
-        height="1000px"
-        type="application/pdf"
+            :src="pdfUrl"
+            width="100%"
+            height="1000px"
+            type="application/pdf"
         >
         Bu PDF'yi görüntüleyemiyorsanız, lütfen dosyayı indirin:
         <a :href="pdfUrl">PDF İndir</a>

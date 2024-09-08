@@ -1,7 +1,6 @@
 <template>
     <div>
-        <p>
-          <!-- <em>{{ $t('privacy_policy.title') }}</em><br> -->
+        <!-- <p>
           <strong>{{ $t('privacy_policy.effective_date') }}</strong><br> {{ $t('privacy_policy.description') }}
           <br><strong>{{ $t('privacy_policy.we_collect_information') }}</strong><br> {{ $t('privacy_policy.we_collect_information_details') }}
           <br><strong>{{ $t('privacy_policy.personal_information') }}:</strong><br> {{ $t('privacy_policy.personal_information_details') }}
@@ -20,13 +19,28 @@
           <br><strong>{{ $t('privacy_policy.data_security') }}:</strong><br> {{ $t('privacy_policy.data_security_details') }}
           <br><strong>{{ $t('privacy_policy.changes_to_policy') }}:</strong><br> {{ $t('privacy_policy.changes_to_policy_details') }}
           <br><strong>{{ $t('privacy_policy.contact_us') }}</strong><br> {{ $t('privacy_policy.contact_us_details') }}          
-      </p>
+        </p> -->
+    
+        <h1>{{ $t('sections.contact.privacy_policy') }}</h1>
+        <iframe
+          :src="pdfUrl"
+          width="100%"
+          height="1000px"
+          type="application/pdf"
+        >
+          Bu PDF'yi görüntüleyemiyorsanız, lütfen dosyayı indirin:
+          <a :href="pdfUrl">PDF İndir</a>
+        </iframe>
     </div>
 </template>
 
 <script>
     export default {
-        
+      data() {
+            return {
+                pdfUrl: '/NOTT_APP_KULLANICI_SÖZLEŞMESİ.pdf'
+            }
+        }
     }
 </script>
 
