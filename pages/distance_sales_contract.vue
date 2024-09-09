@@ -3,8 +3,7 @@
         <h1>{{ $t('sections.contact.distance_sales_contract') }}</h1>
         <iframe
         :src="pdfUrl"
-        width="100%"
-        height="1000px"
+        class="pdf"
         type="application/pdf"
         >
         Bu PDF'yi görüntüleyemiyorsanız, lütfen dosyayı indirin:
@@ -24,5 +23,14 @@
 </script>
 
 <style lang="scss" scoped>
+.pdf {
+    width: 100%;
+    height: 1000px;
+}
 
+@media only screen and (max-width: 600px) {
+    .pdf {
+        height: 500px;
+    }
+}
 </style>
