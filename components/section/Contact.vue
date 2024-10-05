@@ -30,9 +30,6 @@
                 <v-icon large>mdi-email</v-icon>
               </v-btn>
             </div>
-            <div>
-              <v-img :src="require('~/assets/images/bank/iyzico.png')"  class="iyzico-img"  contain />
-            </div>
             <div class="mt-10">
               <v-btn text color="blue" :to="localePath({ name: 'about' })">{{ $t('sections.contact.about') }}</v-btn>
               <v-btn text color="blue" :to="localePath({ name: 'distance_sales_contract' })">{{ $t('sections.contact.distance_sales_contract') }}</v-btn>
@@ -155,16 +152,5 @@ import VueScrollReveal from "scrollreveal";
       height: 200px;
     }
   }
-
-  .iyzico-img{
-    width: 300px !important;
-    height: auto;
-  }
 }
-
-.iyzico-img{
-  max-width: 100%;
-  height: auto;
-}
-
 </style>
